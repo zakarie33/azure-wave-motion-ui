@@ -1,0 +1,441 @@
+/* Notary Management System Custom Styles */
+
+:root {
+    --primary-color: #2c5f8e;
+    --secondary-color: #6c757d;
+    --success-color: #198754;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #0dcaf0;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--light-color);
+}
+
+/* Login Page Styles */
+.bg-primary {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #1a4a73 100%) !important;
+}
+
+.card {
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15) !important;
+}
+
+.btn {
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    padding: 12px 15px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(44, 95, 142, 0.25);
+}
+
+.input-group-text {
+    border-radius: 8px 0 0 8px;
+    border-color: #e0e0e0;
+    background-color: #f8f9fa;
+}
+
+/* Dashboard Styles */
+.sidebar {
+    background: linear-gradient(180deg, var(--primary-color) 0%, #1a4a73  100%);
+    min-height: 100vh;
+    transition: all 0.3s ease;
+}
+
+.sidebar .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+    padding: 12px 20px;
+    margin: 2px 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.sidebar .nav-link i {
+    width: 20px;
+    margin-right: 10px;
+}
+
+/* Main Content */
+.main-content {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+.topbar {
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 15px 20px;
+}
+
+/* Cards */
+.stat-card {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border-left: 4px solid var(--primary-color);
+}
+
+.stat-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+}
+
+.stat-card .stat-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: white;
+}
+
+.stat-card.primary .stat-icon {
+    background: linear-gradient(135deg, var(--primary-color), #1a4a73);
+}
+
+.stat-card.success .stat-icon {
+    background: linear-gradient(135deg, var(--success-color), #146c43);
+}
+
+.stat-card.warning .stat-icon {
+    background: linear-gradient(135deg, var(--warning-color), #d39e00);
+}
+
+.stat-card.danger .stat-icon {
+    background: linear-gradient(135deg, var(--danger-color), #b02a37);
+}
+
+/* Tables */
+.table-container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+    overflow: hidden;
+}
+
+.table thead th {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    font-weight: 600;
+    padding: 15px;
+}
+
+.table tbody tr {
+    transition: all 0.3s ease;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(44, 95, 142, 0.05);
+}
+
+.table td {
+    padding: 15px;
+    vertical-align: middle;
+}
+
+/* Badges */
+.badge {
+    font-size: 0.75em;
+    padding: 6px 12px;
+    border-radius: 20px;
+}
+
+.badge.status-active {
+    background-color: var(--success-color);
+}
+
+.badge.status-pending {
+    background-color: var(--warning-color);
+    color: var(--dark-color);
+}
+
+.badge.status-inactive {
+    background-color: var(--secondary-color);
+}
+
+.badge.status-completed {
+    background-color: var(--info-color);
+    color: var(--dark-color);
+}
+
+/* Buttons */
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-color), #1a4a73);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #1a4a73, var(--primary-color));
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    font-weight: 600;
+    color: var(--dark-color);
+    margin-bottom: 8px;
+}
+
+/* Modal Styles */
+.modal-content {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 10px 50px rgba(0,0,0,0.2);
+}
+
+.modal-header {
+    background: linear-gradient(135deg, var(--primary-color), #1a4a73);
+    color: white;
+    border-radius: 15px 15px 0 0;
+}
+
+.modal-header .btn-close {
+    filter: invert(1);
+}
+
+/* Notifications */
+.alert {
+    border-radius: 10px;
+    border: none;
+    padding: 15px 20px;
+}
+
+.alert-success {
+    background: linear-gradient(135deg, rgba(25, 135, 84, 0.1), rgba(20, 108, 67, 0.1));
+    color: var(--success-color);
+}
+
+.alert-danger {
+    background: linear-gradient(135deg, rgba(220, 53, 69, 0.1), rgba(176, 42, 55, 0.1));
+    color: var(--danger-color);
+}
+
+.alert-warning {
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.1), rgba(211, 158, 0, 0.1));
+    color: #856404;
+}
+
+.alert-info {
+    background: linear-gradient(135deg, rgba(13, 202, 240, 0.1), rgba(11, 172, 204, 0.1));
+    color: #055160;
+}
+
+/* Calendar Styles */
+.calendar {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+}
+
+.calendar-header {
+    background: var(--primary-color);
+    color: white;
+    padding: 20px;
+    border-radius: 12px 12px 0 0;
+}
+
+.calendar-day {
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    min-height: 100px;
+    transition: all 0.3s ease;
+}
+
+.calendar-day:hover {
+    background-color: rgba(44, 95, 142, 0.05);
+}
+
+.calendar-event {
+    background: var(--primary-color);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    margin: 2px 0;
+    cursor: pointer;
+}
+
+/* File Upload */
+.file-upload-area {
+    border: 2px dashed #ddd;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.file-upload-area:hover {
+    border-color: var(--primary-color);
+    background-color: rgba(44, 95, 142, 0.05);
+}
+
+.file-upload-area.dragover {
+    border-color: var(--primary-color);
+    background-color: rgba(44, 95, 142, 0.1);
+}
+
+/* Progress Bars */
+.progress {
+    height: 8px;
+    border-radius: 10px;
+    background-color: #e9ecef;
+}
+
+.progress-bar {
+    border-radius: 10px;
+}
+
+/* Search */
+.search-container {
+    position: relative;
+}
+
+.search-input {
+    padding-left: 45px;
+    border-radius: 25px;
+    border: 1px solid #e0e0e0;
+}
+
+.search-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6c757d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sidebar {
+        margin-left: -250px;
+    }
+    
+    .sidebar.show {
+        margin-left: 0;
+    }
+    
+    .stat-card {
+        margin-bottom: 20px;
+    }
+    
+    .table-responsive {
+        border-radius: 12px;
+    }
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Loading Spinner */
+.spinner {
+    border: 3px solid rgba(44, 95, 142, 0.1);
+    border-top: 3px solid var(--primary-color);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1a4a73;
+}
+
+/* Signature Pad */
+.signature-pad {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    cursor: crosshair;
+}
+
+/* Print Styles */
+@media print {
+    .sidebar,
+    .topbar,
+    .btn,
+    .no-print {
+        display: none !important;
+    }
+    
+    .main-content {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    .card {
+        box-shadow: none !important;
+        border: 1px solid #ddd !important;
+    }
+}
