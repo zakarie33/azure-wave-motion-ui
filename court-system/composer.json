@@ -1,0 +1,51 @@
+{
+    "name": "court-system/digital-court-management",
+    "description": "Digital Court Case Management and Automation System with Multi-Role Access, Document Tracking, and Case Analytics",
+    "version": "1.0.0",
+    "type": "project",
+    "keywords": ["court", "case-management", "legal", "justice", "php", "mysql"],
+    "homepage": "https://github.com/court-system/digital-court-management",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Court System Development Team",
+            "email": "dev@court-system.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "ext-pdo": "*",
+        "ext-pdo_mysql": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "ext-fileinfo": "*",
+        "ext-gd": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "CourtSystem\\": "src/",
+            "CourtSystem\\Models\\": "models/",
+            "CourtSystem\\Controllers\\": "controllers/",
+            "CourtSystem\\Views\\": "views/"
+        },
+        "files": [
+            "includes/functions.php",
+            "includes/auth.php"
+        ]
+    },
+    "scripts": {
+        "install-db": "php database/install.php",
+        "test": "phpunit tests/",
+        "serve": "php -S localhost:8000 -t ."
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
